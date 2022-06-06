@@ -1,0 +1,21 @@
+{
+  "name": "autonode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "fetch": "^1.1.0",
+    "mathjs": "^10.6.0",
+    "node-fetch": "^2.6.7",
+    "socket.io": "^4.4.1"
+  }
+}
