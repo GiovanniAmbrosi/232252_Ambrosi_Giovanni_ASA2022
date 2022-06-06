@@ -1,0 +1,438 @@
+houseAgent               Trying to use intention AlarmIntention to achieve goal AlarmGoal#0[object Object]
+houseAgent>AlarmIntention#0      Intention started
+lightAgent               Trying to use intention SensePeopleIntention to achieve goal SensePersonGoal#1[object Object]
+lightAgent>SensePeopleIntention#1        Intention started
+lightAgent               Trying to use intention AgentLightIntention to achieve goal AgentLightGoal#2[object Object]  
+lightAgent>AgentLightIntention#2         Intention started
+houseAgent               Trying to use intention SensePanelsIntention to achieve goal SensePanelsGoal#3[object Object]
+houseAgent>SensePanelsIntention#3        Intention started
+houseAgent               Trying to use intention AgentPanelsIntention to achieve goal AgentPanelsGoal#4[object Object]
+houseAgent>AgentPanelsIntention#4        Intention started
+carAgent                 Trying to use intention AgentCarIntention to achieve goal AgentCarGoal#5[object Object]      
+carAgent>AgentCarIntention#5     Intention started
+carAgent                 Trying to use intention SenseCarIntention to achieve goal SenseCarGoal#6[object Object]      
+carAgent>SenseCarIntention#6     Intention started
+
+
+
+
+Capacity of panels  0                               //Here the agent informs about the production of panels
+Consume of the house  0.5                           //Here the agent informs about the consume of the house
+Energy stored/required  -0.5                        //Here the agent informs about the energy stored or required
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//STATUS OF BATTERIES AND THE CAR
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Batteries are empty
+
+kWs bought from the public line:  -0.5  total price:  0.05
+
+Level battery low, DC mode on                       //THE CAR HAS TO BE CHARGED IN DC_MODE
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//BELOW ARE LISTEED ALL THE STARTING BELIEFS OF THE AGENTS
+
+--------------------------------------------------------------------------------------------------------------------------
+
+lightAgent               Belief changed: in_room bedroom_1
+lightAgent               Belief changed: not light_on bedroom_1_light
+lightAgent               Belief changed: not light_off living_room_1_light
+carAgent                 Belief changed: in_charge car
+
+ bedroom_1 light turned on
+
+
+ living_room_1 light turned off
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//EVERY HOUR THE AGENT INFORMS ABOUT THE PANELS PRODUCTION AND THE CONSUME OF THE HOUSE, COMPUTING
+//THE DIFFERENCE BETWEEN THE TWO VALUES
+//ADDITIONALLY THE AGENT PRINTS THE SITUATIONS OF THE BATTERIES AND THE PRICE OF THE CURRENT BOUGHT OR SOLD
+
+--------------------------------------------------------------------------------------------------------------------------
+
+0:01:00 
+Capacity of panels  0
+Consume of the house  5
+Energy stored/required  -5
+
+Batteries are empty
+
+kWs bought from the public line:  -5  total price:  0.55
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//NOTIFICATION OF THE CARAGENT ABOUT THE CHARGE MODE
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Level battery normal, keep charging in AC mode
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//HERE BELOW THE HOUSE AGENT INFORMS ABOUT THE DEVICES THAT ARE COVERING THE CONSUME OF THE HOUSE. THIS IS REPORTED EVERY HOUR
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Consume of the car is 3kW
+
+
+Charge of the car covered by the panels  0
+
+
+Charge of the car covered by the battery system  3
+
+0:02:00 
+
+Capacity of panels  0
+Consume of the house  3
+Energy stored/required  -3
+
+Batteries are empty
+
+kWs bought from the public line:  -3  total price:  0.85
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+
+Charge of the car covered by the panels  0
+
+
+Charge of the car covered by the battery system  3
+
+0:03:00 
+
+Capacity of panels  0
+Consume of the house  3
+Energy stored/required  -3
+
+Batteries are empty
+
+kWs bought from the public line:  -3  total price:  1.15
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+
+Charge of the car covered by the panels  0
+
+
+Charge of the car covered by the battery system  3
+
+0:04:00 
+Capacity of panels  0
+Consume of the house  3
+Energy stored/required  -3
+
+Batteries are empty
+
+kWs bought from the public line:  -3  total price:  1.45
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+
+Charge of the car covered by the panels  0
+
+
+Charge of the car covered by the battery system  3
+
+0:05:00 Capacity of panels  0
+Consume of the house  3
+Energy stored/required  -3
+
+Batteries are empty
+
+kWs bought from the public line:  -3  total price:  1.75
+
+Car totally charged
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//FROM THIS POINT RESIDENTS START MOVING. STEFANO MOVES FROM BEDROOM1 TO LIVINGROOM1 AND AS WE CAN SEE THE lightAgent
+//TURNS ON THE LIGHT OF THE LIVINGROOM1 AND OFF THE LIGHT OF THE BEDROOM1
+//THE AGENT PERFORMS THAT ACTION FOR ALL MOVEMENTS IN THE HOUSE
+
+--------------------------------------------------------------------------------------------------------------------------
+
+0:06:00
+ Stefano  moved from bedroom_1 to living_room_1
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored/required  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 0
+
+lightAgent               Belief changed: in_room living_room_1
+lightAgent               Belief changed: light_on living_room_1_light
+lightAgent               Belief changed: light_off bedroom_1_light
+houseAgent               Belief changed: capacity 3
+houseAgent               Belief changed: intensity true
+
+ living_room_1 light turned on
+
+
+ bedroom_1 light turned off
+
+houseAgent>AlarmIntention#0      ALARM, it's 6am!
+houseAgent>AlarmIntention#0      Intention success
+houseAgent               Succesfully used intention AlarmIntention to achieve goal AlarmGoal#0[object Object]
+0:06:15
+ Elisabetta  moved from bedroom_1 to living_room_1
+
+lightAgent               Belief changed: not light_on living_room_1_light
+
+ living_room_1 light turned on
+
+
+ bedroom_1 light turned off
+
+0:06:30
+ Stefano  failed moving from living_room_1 to bath_room
+
+
+ Elisabetta  moved from living_room_1 to living_room_0
+
+lightAgent               Belief changed: in_room living_room_0
+lightAgent               Belief changed: light_on living_room_0_light
+lightAgent               Belief changed: light_off living_room_1_light
+
+ living_room_0 light turned on
+
+
+ living_room_1 light turned off
+
+0:07:00
+ Elisabetta  moved from living_room_0 to kitchen
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored/required  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 3
+
+lightAgent               Belief changed: in_room kitchen
+lightAgent               Belief changed: light_on kitchen_light
+lightAgent               Belief changed: light_off living_room_0_light
+
+ kitchen light turned on
+
+
+ living_room_0 light turned off
+
+0:07:30
+ Stefano  moved from living_room_1 to living_room_0
+
+lightAgent               Belief changed: not light_on living_room_0_light
+
+ living_room_0 light turned on
+
+
+ living_room_1 light turned off
+
+0:08:00
+ Stefano  moved from living_room_0 to garage
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored/required  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 6
+
+lightAgent               Belief changed: in_room garage
+lightAgent               Belief changed: light_on garage_light
+
+ garage light turned on
+
+
+ living_room_0 light turned off
+
+0:08:30
+ Elisabetta  moved from kitchen to living_room_0
+
+lightAgent               Belief changed: light_off kitchen_light
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+0:09:00
+ Elisabetta  moved from living_room_0 to laundry_room
+
+Capacity of panels  3
+Consume of the house  1
+Energy stored/required  2
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 9
+
+lightAgent               Belief changed: in_room laundry_room
+lightAgent               Belief changed: light_on laundry_room_light
+
+ laundry_room light turned on
+
+
+ living_room_0 light turned off
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//HERE WE CAN SEE THAT THE CONSUME OF THE HOUSE IS 1 AND THE PRODUCTION OF PANELS IS 3, THE DIFFERENCE IS TWO, BUT
+//THE BATTERIES ARE FULL SO THE AGENT STARTS SOLDING THE CURRENT TO THE PUBLIC AUTHORITY
+
+--------------------------------------------------------------------------------------------------------------------------
+
+0:14:00 Capacity of panels  3
+Consume of the house  2
+Energy stored/required  1
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  1.00
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//HERE STEFANO HAS JUST COME BACK AND PUT THE CAR IN CHARGE. THE CAR AGENT VERIFIES THAT THE MODALITY NEEDED IS AC_MODE
+//IN FACT THE CONSUME OF THE CAR IS 3KWS
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+0:19:30
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+
+Charge of the car covered by the panels  0
+
+
+Charge of the car covered by the battery system  3
+
+
+ Stefano  moved from garage to kitchen
+
+lightAgent               Belief changed: light_off garage_light
+
+ kitchen light turned on
+
+
+ garage light turned off
+
+
+
+0:19:45
+ Stefano  moved from kitchen to living_room_0
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+ --------------------------------------------------------------------------------------------------------------------------
+
+//AT 19.30 STEFANO HAS COME BACK TO HOME AND CAR IS PUTTED IN CHARGE. tHE ENERGY REQUIRED TO COVER ALL THE CONSUME
+//IS 2 KWS AND THE HOUSE AGENT TKES THE CURRENT NEEDED FROM THE BATTERIES WHICH DECREASE TO 8
+//AT 20.00 THE CHARGE OF THE CAR IS COMPLETED
+
+--------------------------------------------------------------------------------------------------------------------------
+
+0:20:00 Capacity of panels  0
+Consume of the house  2
+Energy stored/required  -2
+Batteries are supplying the house
+
+Capacity of the batteries is:  8
+
+Car totally charged
+
+0:20:30
+ Stefano  moved from living_room_0 to living_room_1
+
+
+ Elisabetta  moved from kitchen to living_room_0
+
+
+ living_room_1 light turned on
+
+
+ living_room_0 light turned off
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+0:20:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+
+ living_room_1 light turned on
+
+
+ living_room_0 light turned off
+
+0:21:00
+ Stefano  moved from living_room_1 to bedroom_1
+
+
+ Elisabetta  moved from living_room_1 to bedroom_1
+
+Capacity of panels  0
+Consume of the house  0
+Energy stored/required  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  8
+
+ bedroom_1 light turned on
+
+
+ living_room_1 light turned off
+
+--------------------------------------------------------------------------------------------------------------------------
+
+//DAILY REPORT IS PRINTED
+//THE PRIZE OF CURRENT SOLD IS OBTAINED AS SUM OF EACH KW MULTIPLIED BY 0.20
+//THE PRIVE CURRENT BOUGHT IS OBTAINED AS SUM OF EACH KW MULTIPLIED BY 0.10
+
+--------------------------------------------------------------------------------------------------------------------------
+
+0:23:30 Daily report of current sold and bought:
+
+Current sold (€):  5.80
+Current bought (€):  1.75
+

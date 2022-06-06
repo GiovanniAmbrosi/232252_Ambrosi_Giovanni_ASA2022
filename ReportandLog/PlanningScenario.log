@@ -1,0 +1,153 @@
+VacuumCleanerAgent_0             Trying to use intention SenseRobotIntention to achieve goal SenseRobotGoal#1[object Object]        
+VacuumCleanerAgent_0>SenseRobotIntention#1       Intention started
+VacuumCleanerAgent_0             Trying to use intention SensePresRobotIntention to achieve goal SensePresRobotGoal#2[object Object]
+VacuumCleanerAgent_0>SensePresRobotIntention#2   Intention started
+VacuumCleanerAgent_1             Trying to use intention SenseRobotIntention to achieve goal SenseRobotGoal#3[object Object]        
+VacuumCleanerAgent_1>SenseRobotIntention#3       Intention started
+VacuumCleanerAgent_1             Trying to use intention SensePresRobotIntention to achieve goal SensePresRobotGoal#4[object Object]
+VacuumCleanerAgent_1>SensePresRobotIntention#4   Intention started
+VacuumCleanerAgent_0             Belief changed: vacuum vacuum_robot
+VacuumCleanerAgent_0             Belief changed: connected kitchen living_room_0
+VacuumCleanerAgent_0             Belief changed: connected living_room_0 kitchen
+VacuumCleanerAgent_0             Belief changed: connected laundry_room living_room_0
+VacuumCleanerAgent_0             Belief changed: connected living_room_0 laundry_room
+VacuumCleanerAgent_0             Belief changed: connected bath_room living_room_0
+VacuumCleanerAgent_0             Belief changed: connected living_room_0 bath_room
+VacuumCleanerAgent_1             Belief changed: vacuum vacuum_robot
+VacuumCleanerAgent_1             Belief changed: connected bedroom_1 living_room_1
+VacuumCleanerAgent_1             Belief changed: connected living_room_1 bedroom_1
+VacuumCleanerAgent_1             Belief changed: connected bedroom_2 living_room_1
+VacuumCleanerAgent_1             Belief changed: connected living_room_1 bedroom_2
+VacuumCleanerAgent_1             Belief changed: connected battery_room living_room_1
+VacuumCleanerAgent_1             Belief changed: connected living_room_1 battery_room
+VacuumCleanerAgent_0             Belief changed: clean kitchen
+VacuumCleanerAgent_0             Belief changed: not dirty kitchen
+VacuumCleanerAgent_0             Belief changed: clean living_room_0
+VacuumCleanerAgent_0             Belief changed: not dirty living_room_0
+VacuumCleanerAgent_0             Belief changed: clean laundry_room
+VacuumCleanerAgent_0             Belief changed: not dirty laundry_room
+VacuumCleanerAgent_0             Belief changed: clean bath_room
+VacuumCleanerAgent_0             Belief changed: not dirty bath_room
+VacuumCleanerAgent_0             Belief changed: in_room vacuum_robot kitchen
+VacuumCleanerAgent_0             Belief changed: not in_room vacuum_robot living_room_0
+VacuumCleanerAgent_1             Belief changed: clean living_room_1
+VacuumCleanerAgent_1             Belief changed: not dirty living_room_1
+VacuumCleanerAgent_1             Belief changed: clean bedroom_1
+VacuumCleanerAgent_1             Belief changed: not dirty bedroom_1
+VacuumCleanerAgent_1             Belief changed: clean bedroom_2
+VacuumCleanerAgent_1             Belief changed: not dirty bedroom_2
+VacuumCleanerAgent_1             Belief changed: clean battery_room
+VacuumCleanerAgent_1             Belief changed: not dirty battery_room
+VacuumCleanerAgent_1             Belief changed: in_room vacuum_robot battery_room
+VacuumCleanerAgent_1             Belief changed: not in_room vacuum_robot living_room_1
+0:06:00 
+VacuumCleanerAgent_0             Belief changed: not clean kitchen
+VacuumCleanerAgent_0             Belief changed: dirty kitchen
+VacuumCleanerAgent_0             Belief changed: not clean laundry_room
+VacuumCleanerAgent_0             Belief changed: dirty laundry_room
+VacuumCleanerAgent_1             Belief changed: not clean living_room_1
+VacuumCleanerAgent_1             Belief changed: dirty living_room_1
+VacuumCleanerAgent_1             Belief changed: not clean battery_room
+VacuumCleanerAgent_1             Belief changed: dirty battery_room
+VacuumCleanerAgent_1             Belief changed: not clean bedroom_2
+VacuumCleanerAgent_1             Belief changed: dirty bedroom_2
+houseAgent>AlarmIntention#0      ALARM, it's 6am!
+houseAgent>AlarmIntention#0      Intention success
+houseAgent               Succesfully used intention AlarmIntention to achieve goal AlarmGoal#0[object Object]
+0:08:00 
+VacuumCleanerAgent_0             Trying to use intention RetryFourTimesIntentionCleaner to achieve goal RetryGoalCleaner#6[object Object]
+VacuumCleanerAgent_0>RetryFourTimesIntentionCleaner#5    Intention started
+VacuumCleanerAgent_0             Trying to use intention OnlinePlanning to achieve goal PddlGoal#5[object Object]
+VacuumCleanerAgent_0>OnlinePlanning#6    Intention started
+0:09:30 
+VacuumCleanerAgent_0>OnlinePlanning#6    Plan found:
+VacuumCleanerAgent_0>OnlinePlanning#6    - (clean_0 vacuum_robot kitchen)
+VacuumCleanerAgent_0>OnlinePlanning#6    - (move_to_0 vacuum_robot kitchen living_room_0)
+VacuumCleanerAgent_0>OnlinePlanning#6    - (move_to_0 vacuum_robot living_room_0 laundry_room)
+VacuumCleanerAgent_0>OnlinePlanning#6    - (clean_0 vacuum_robot laundry_room)
+VacuumCleanerAgent_0>OnlinePlanning#6    - (move_to_0 vacuum_robot laundry_room living_room_0)
+VacuumCleanerAgent_0>OnlinePlanning#6    - (move_to_0 vacuum_robot living_room_0 kitchen)
+VacuumCleanerAgent_0>OnlinePlanning#6    Starting sequential step (Clean_0 vacuum_robot kitchen) Effect: clean kitchen,not dirty kitchen
+VacuumCleanerAgent_0>Clean_0#7   Intention started
+0:09:45 
+VacuumCleanerAgent_0>Clean_0#7   Intention success
+VacuumCleanerAgent_0>OnlinePlanning#6    Starting sequential step (Move_to_0 vacuum_robot kitchen living_room_0) Effect: not in_room vacuum_robot kitchen,in_room vacuum_robot living_room_0
+VacuumCleanerAgent_0>Move_to_0#8         Intention started
+vaccum_cleaner_0         moved from kitchen to living_room_0
+VacuumCleanerAgent_0             Belief changed: in_room vacuum_robot living_room_0
+VacuumCleanerAgent_0>Move_to_0#8         Intention success
+VacuumCleanerAgent_0>OnlinePlanning#6    Starting sequential step (Move_to_0 vacuum_robot living_room_0 laundry_room) Effect: not in_room vacuum_robot living_room_0,in_room vacuum_robot laundry_room
+VacuumCleanerAgent_0>Move_to_0#9         Intention started
+vaccum_cleaner_0         moved from living_room_0 to laundry_room
+VacuumCleanerAgent_0             Belief changed: in_room vacuum_robot laundry_room
+VacuumCleanerAgent_0             Belief changed: not in_room vacuum_robot living_room_0
+0:10:00 
+VacuumCleanerAgent_0>Move_to_0#9         Intention success
+VacuumCleanerAgent_0>OnlinePlanning#6    Starting sequential step (Clean_0 vacuum_robot laundry_room) Effect: clean laundry_room,not dirty laundry_room
+VacuumCleanerAgent_0>Clean_0#10  Intention started
+VacuumCleanerAgent_0>Clean_0#10  Intention success
+0:10:15 
+VacuumCleanerAgent_0>OnlinePlanning#6    Starting sequential step (Move_to_0 vacuum_robot laundry_room living_room_0) Effect: not in_room vacuum_robot laundry_room,in_room vacuum_robot living_room_0
+VacuumCleanerAgent_0>Move_to_0#11        Intention started
+vaccum_cleaner_0         moved from laundry_room to living_room_0
+VacuumCleanerAgent_0             Belief changed: in_room vacuum_robot living_room_0
+VacuumCleanerAgent_0>Move_to_0#11        Intention success
+VacuumCleanerAgent_0>OnlinePlanning#6    Starting sequential step (Move_to_0 vacuum_robot living_room_0 kitchen) Effect: not in_room vacuum_robot living_room_0,in_room vacuum_robot kitchen
+VacuumCleanerAgent_0>Move_to_0#12        Intention started
+vaccum_cleaner_0         moved from living_room_0 to kitchen
+VacuumCleanerAgent_0             Belief changed: not in_room vacuum_robot living_room_0
+0:10:30 
+VacuumCleanerAgent_0>Move_to_0#12        Intention success
+VacuumCleanerAgent_0>OnlinePlanning#6    Intention success
+VacuumCleanerAgent_0             Succesfully used intention OnlinePlanning to achieve goal PddlGoal#5[object Object]
+VacuumCleanerAgent_0>RetryFourTimesIntentionCleaner#5    Intention success
+VacuumCleanerAgent_0             Succesfully used intention RetryFourTimesIntentionCleaner to achieve goal RetryGoalCleaner#6[object Object]
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+0:19:30 
+VacuumCleanerAgent_1             Trying to use intention RetryFourTimesIntentionCleaner1 to achieve goal RetryGoalCleaner1#14[object Object]
+VacuumCleanerAgent_1>RetryFourTimesIntentionCleaner1#13  Intention started
+VacuumCleanerAgent_1             Trying to use intention OnlinePlanning1 to achieve goal PddlGoal#13[object Object]
+VacuumCleanerAgent_1>OnlinePlanning1#14  Intention started
+0:20:45 
+VacuumCleanerAgent_1>OnlinePlanning1#14  Plan found:
+VacuumCleanerAgent_1>OnlinePlanning1#14  - (clean_1 vacuum_robot battery_room)
+VacuumCleanerAgent_1>OnlinePlanning1#14  - (move_to_1 vacuum_robot battery_room living_room_1)
+VacuumCleanerAgent_1>OnlinePlanning1#14  - (clean_1 vacuum_robot living_room_1)
+VacuumCleanerAgent_1>OnlinePlanning1#14  - (move_to_1 vacuum_robot living_room_1 bedroom_2)
+VacuumCleanerAgent_1>OnlinePlanning1#14  - (clean_1 vacuum_robot bedroom_2)
+VacuumCleanerAgent_1>OnlinePlanning1#14  Starting sequential step (Clean_1 vacuum_robot battery_room) Effect: clean battery_room,not dirty battery_room
+VacuumCleanerAgent_1>Clean_1#15  Intention started
+0:21:00 
+VacuumCleanerAgent_1>Clean_1#15  Intention success
+VacuumCleanerAgent_1>OnlinePlanning1#14  Starting sequential step (Move_to_1 vacuum_robot battery_room living_room_1) Effect: not in_room vacuum_robot battery_room,in_room vacuum_robot living_room_1
+VacuumCleanerAgent_1>Move_to_1#16        Intention started
+vacuum_cleaner_1         moved from battery_room to living_room_1
+VacuumCleanerAgent_1             Belief changed: in_room vacuum_robot living_room_1
+VacuumCleanerAgent_1>Move_to_1#16        Intention success
+VacuumCleanerAgent_1>OnlinePlanning1#14  Starting sequential step (Clean_1 vacuum_robot living_room_1) Effect: clean living_room_1,not dirty living_room_1
+VacuumCleanerAgent_1>Clean_1#17  Intention started
+0:21:15 VacuumCleanerAgent_1>Clean_1#17  Intention success
+VacuumCleanerAgent_1>OnlinePlanning1#14  Starting sequential step (Move_to_1 vacuum_robot living_room_1 bedroom_2) Effect: not in_room vacuum_robot living_room_1,in_room vacuum_robot bedroom_2
+VacuumCleanerAgent_1>Move_to_1#18        Intention started
+vacuum_cleaner_1         moved from living_room_1 to bedroom_2
+VacuumCleanerAgent_1             Belief changed: in_room vacuum_robot bedroom_2
+VacuumCleanerAgent_1             Belief changed: not in_room vacuum_robot living_room_1
+VacuumCleanerAgent_1>Move_to_1#18        Intention success
+VacuumCleanerAgent_1>OnlinePlanning1#14  Starting sequential step (Clean_1 vacuum_robot bedroom_2) Effect: clean bedroom_2,not dirty bedroom_2
+VacuumCleanerAgent_1>Clean_1#19  Intention started
+0:21:30 VacuumCleanerAgent_1>Clean_1#19  Intention success
+VacuumCleanerAgent_1>OnlinePlanning1#14  Intention success
+VacuumCleanerAgent_1             Succesfully used intention OnlinePlanning1 to achieve goal PddlGoal#13[object Object]
+0:21:45 VacuumCleanerAgent_1>RetryFourTimesIntentionCleaner1#13  Intention success
+VacuumCleanerAgent_1             Succesfully used intention RetryFourTimesIntentionCleaner1 to achieve goal RetryGoalCleaner1#14[object Object]
+
+
+COMMENT:
+The file is splitted in two parts one per vacuum cleaner.
+At 6.00 the rooms are considered as 'dirty' and the cleaners have to clean them up.
+From 8.00 to 10.30 the first vacuum cleaner cleans up the rooms of its floor, while from 19.30 to 21.45 the second one has finished its
+task. In order to maintain a readable file I decide to run the code for planning agents and the other agents separately.
+As we can see the vaccum cleaners move between rooms, the plant of the house is given them. Once they get in a room and detect
+it as 'dirty' they perform action Clean, making the room clean
