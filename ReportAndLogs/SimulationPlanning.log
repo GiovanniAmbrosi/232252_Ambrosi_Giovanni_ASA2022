@@ -1,0 +1,466 @@
+//------------------INITIAL BELIEFS OF THE AGENTS-----------------//
+
+//---MAP OF THE ENVIRONMENT FOR THE VACUUM CLEANER---//
+
+VacuumCleanerAgent_0             Belief changed: vacuum vacuum_robot
+VacuumCleanerAgent_0             Belief changed: in_room vacuum_robot kitchen
+VacuumCleanerAgent_0             Belief changed: connected kitchen living_room_0
+VacuumCleanerAgent_0             Belief changed: connected living_room_0 kitchen
+VacuumCleanerAgent_0             Belief changed: connected laundry_room living_room_0
+VacuumCleanerAgent_0             Belief changed: connected living_room_0 laundry_room
+VacuumCleanerAgent_0             Belief changed: connected bath_room living_room_0
+VacuumCleanerAgent_0             Belief changed: connected living_room_0 bath_room
+VacuumCleanerAgent_0             Belief changed: connected living_room_0 living_room_1
+VacuumCleanerAgent_0             Belief changed: connected living_room_1 living_room_0
+VacuumCleanerAgent_0             Belief changed: connected living_room_1 bedroom_1
+VacuumCleanerAgent_0             Belief changed: connected bedroom_1 living_room_1
+VacuumCleanerAgent_0             Belief changed: connected living_room_1 bedroom_2
+VacuumCleanerAgent_0             Belief changed: connected bedroom_2 living_room_1
+VacuumCleanerAgent_0             Belief changed: connected living_room_1 battery_room
+VacuumCleanerAgent_0             Belief changed: connected battery_room living_room_1
+
+//---MAP OF THE ENVIRONMENT FOR THE ROLLER SHUTTER---//
+
+RollerShutterAgent               Belief changed: roller_shutter roller_shutter_robot
+RollerShutterAgent               Belief changed: in_room roller_shutter_robot kitchen
+RollerShutterAgent               Belief changed: connected kitchen living_room_0
+RollerShutterAgent               Belief changed: connected living_room_0 kitchen
+RollerShutterAgent               Belief changed: connected laundry_room living_room_0
+RollerShutterAgent               Belief changed: connected living_room_0 laundry_room
+RollerShutterAgent               Belief changed: connected bath_room living_room_0
+RollerShutterAgent               Belief changed: connected living_room_0 bath_room
+RollerShutterAgent               Belief changed: connected living_room_0 living_room_1
+RollerShutterAgent               Belief changed: connected living_room_1 living_room_0
+RollerShutterAgent               Belief changed: connected living_room_1 bedroom_1
+RollerShutterAgent               Belief changed: connected bedroom_1 living_room_1
+RollerShutterAgent               Belief changed: connected living_room_1 bedroom_2
+RollerShutterAgent               Belief changed: connected bedroom_2 living_room_1
+
+WashingMachineAgent              Belief changed: empty wm
+
+//---BELIEFS FOR THE STATUS OF THE ROOMS---//
+
+VacuumCleanerAgent_0             Belief changed: clean kitchen
+VacuumCleanerAgent_0             Belief changed: not dirty kitchen
+VacuumCleanerAgent_0             Belief changed: clean living_room_0
+VacuumCleanerAgent_0             Belief changed: not dirty living_room_0
+VacuumCleanerAgent_0             Belief changed: clean laundry_room
+VacuumCleanerAgent_0             Belief changed: not dirty laundry_room
+VacuumCleanerAgent_0             Belief changed: clean bath_room
+VacuumCleanerAgent_0             Belief changed: not dirty bath_room
+VacuumCleanerAgent_0             Belief changed: clean living_room_1
+VacuumCleanerAgent_0             Belief changed: not dirty living_room_1
+VacuumCleanerAgent_0             Belief changed: clean battery_room
+VacuumCleanerAgent_0             Belief changed: not dirty battery_room
+VacuumCleanerAgent_0             Belief changed: clean bedroom_1
+VacuumCleanerAgent_0             Belief changed: not dirty bedroom_1
+VacuumCleanerAgent_0             Belief changed: clean bedroom_2
+VacuumCleanerAgent_0             Belief changed: not dirty bedroom_2
+
+//---BELIEFS FOR THE STATUS OF THE SHUTTERS---//
+
+RollerShutterAgent               Belief changed: not in_room roller_shutter_robot living_room_0
+RollerShutterAgent               Belief changed: not open rs kitchen
+RollerShutterAgent               Belief changed: close rs kitchen
+RollerShutterAgent               Belief changed: not open rs laundry_room
+RollerShutterAgent               Belief changed: close rs laundry_room
+RollerShutterAgent               Belief changed: not open rs bedroom_1
+RollerShutterAgent               Belief changed: close rs bedroom_1
+RollerShutterAgent               Belief changed: not open rs bedroom_2
+RollerShutterAgent               Belief changed: close rs bedroom_2
+0:01:00
+0:02:00
+0:03:00
+0:04:00
+0:05:00
+0:06:00
+
+ Elisabetta  moved from bedroom_1 to living_room_1
+
+//---BELIEFS FOR THE PLAN OF THE DAYS AFTER ---//
+"If this beliefs are not provided rooms keep clean all the days after the first clean action"
+"by the vacuum cleaner. Doing this, the plan is activated every day"
+
+
+
+VacuumCleanerAgent_0             Belief changed: not clean kitchen
+VacuumCleanerAgent_0             Belief changed: dirty kitchen
+VacuumCleanerAgent_0             Belief changed: not clean living_room_0
+VacuumCleanerAgent_0             Belief changed: dirty living_room_0
+VacuumCleanerAgent_0             Belief changed: not clean bath_room
+VacuumCleanerAgent_0             Belief changed: dirty bath_room
+VacuumCleanerAgent_0             Belief changed: not clean laundry_room
+VacuumCleanerAgent_0             Belief changed: dirty laundry_room
+VacuumCleanerAgent_0             Belief changed: not clean living_room_1
+VacuumCleanerAgent_0             Belief changed: dirty living_room_1
+VacuumCleanerAgent_0             Belief changed: not clean battery_room
+VacuumCleanerAgent_0             Belief changed: dirty battery_room
+VacuumCleanerAgent_0             Belief changed: not clean bedroom_1
+VacuumCleanerAgent_0             Belief changed: dirty bedroom_1
+VacuumCleanerAgent_0             Belief changed: not clean bedroom_2
+VacuumCleanerAgent_0             Belief changed: dirty bedroom_2
+0:06:15
+ Elisabetta  moved from living_room_1 to living_room_0
+
+0:06:30
+ Elisabetta  moved from living_room_0 to laundry_room
+
+"Elisabetta enters the laundry_room, put the clothes in the basket of the washing machine"
+"The agent updates its beliefs"
+WashingMachineAgent              Belief changed: clothes_in clothes
+0:07:00
+WashingMachineAgent
+Trying to use intention RetryFourTimesIntentionCleaner2 to achieve goal RetryGoalCleaner2#7[object Object]
+WashingMachineAgent>RetryFourTimesIntentionCleaner2#6    Intention started
+WashingMachineAgent
+Trying to use intention OnlinePlanning2 to achieve goal PddlGoal#6[object Object]
+WashingMachineAgent>OnlinePlanning2#7    Intention started
+0:08:00
+0:08:30
+ Elisabetta  moved from laundry_room to living_room_0
+
+0:09:00
+VacuumCleanerAgent_0
+Trying to use intention RetryFourTimesIntentionCleaner to achieve goal RetryGoalCleaner#9[object Object]
+VacuumCleanerAgent_0>RetryFourTimesIntentionCleaner#8    Intention started
+VacuumCleanerAgent_0
+Trying to use intention OnlinePlanning to achieve goal PddlGoal#8[object Object]
+VacuumCleanerAgent_0>OnlinePlanning#9    Intention started
+VacuumCleanerAgent_0
+Trying to use intention RetryFourTimesIntentionCleaner to achieve goal RetryGoalCleaner#11[object Object]
+VacuumCleanerAgent_0>RetryFourTimesIntentionCleaner#10   Intention started
+VacuumCleanerAgent_0
+Trying to use intention OnlinePlanning to achieve goal PddlGoal#10[object Object]
+VacuumCleanerAgent_0>OnlinePlanning#11   Intention started
+0:10:00
+0:10:45
+
+"Plan of the Washing Machine Agent found, starts washing clothes"
+
+WashingMachineAgent>OnlinePlanning2#7     Plan found:
+WashingMachineAgent>OnlinePlanning2#7    - (fill_water clothes wm)
+WashingMachineAgent>OnlinePlanning2#7    - (set_program clothes wm)
+WashingMachineAgent>OnlinePlanning2#7    - (wash clothes wm)
+WashingMachineAgent>OnlinePlanning2#7    - (take_clothes clothes wm)
+WashingMachineAgent>OnlinePlanning2#7    Starting sequential step (Fill_Water clothes wm) Effect: full wm,clothes_in clothes
+WashingMachineAgent>Fill_Water#12        Intention started
+0:11:00
+
+WashingMachineAgent>Fill_Water#12        Intention success
+WashingMachineAgent>OnlinePlanning2#7    Starting sequential step (Set_Program clothes wm) Effect: full wm,program_set wm
+WashingMachineAgent>Set_Program#13       Intention started
+WashingMachineAgent>Set_Program#13       Intention success
+0:11:15
+
+WashingMachineAgent>OnlinePlanning2#7     Starting sequential step (Wash clothes wm) Effect: wash clothes,not program_set wm
+WashingMachineAgent>Wash#14      Intention started
+WashingMachineAgent>Wash#14      Intention success
+WashingMachineAgent>OnlinePlanning2#7    Starting sequential step (Take_Clothes clothes wm) Effect: not clothes_in clothes,empty wm,ready wm
+WashingMachineAgent>Take_Clothes#15      Intention started
+0:11:30
+
+WashingMachineAgent>Take_Clothes#15       Intention success
+WashingMachineAgent>OnlinePlanning2#7    Intention success
+WashingMachineAgent
+Succesfully used intention OnlinePlanning2 to achieve goal PddlGoal#6[object Object]
+0:11:45
+
+WashingMachineAgent>RetryFourTimesIntentionCleaner2#6     Intention success
+WashingMachineAgent
+Succesfully used intention RetryFourTimesIntentionCleaner2 to achieve goal RetryGoalCleaner2#7[object Object]
+0:12:00
+
+RollerShutterAgent
+Trying to use intention RetryFourTimesIntentionCleaner1 to achieve goal RetryGoalCleaner1#17[object Object]
+RollerShutterAgent>RetryFourTimesIntentionCleaner1#16    Intention started
+RollerShutterAgent
+Trying to use intention OnlinePlanning1 to achieve goal PddlGoal#16[object Object]
+RollerShutterAgent>OnlinePlanning1#17    Intention started
+0:13:00
+0:14:00
+0:15:00
+0:15:15
+
+"Now it's the time for the roller shutter robot to roll up the shutters"
+"It starts moving around the rooms and performs the action"
+
+RollerShutterAgent>OnlinePlanning1#17     Plan found:
+RollerShutterAgent>OnlinePlanning1#17    - (roll_up roller_shutter_robot kitchen rs)
+RollerShutterAgent>OnlinePlanning1#17    - (move_to_1 roller_shutter_robot kitchen living_room_0)      
+RollerShutterAgent>OnlinePlanning1#17    - (move_to_1 roller_shutter_robot living_room_0 laundry_room) 
+RollerShutterAgent>OnlinePlanning1#17    - (roll_up roller_shutter_robot laundry_room rs)
+RollerShutterAgent>OnlinePlanning1#17    - (move_to_1 roller_shutter_robot laundry_room living_room_0) 
+RollerShutterAgent>OnlinePlanning1#17    - (move_to_1 roller_shutter_robot living_room_0 living_room_1)
+RollerShutterAgent>OnlinePlanning1#17    - (move_to_1 roller_shutter_robot living_room_1 bedroom_1)    
+RollerShutterAgent>OnlinePlanning1#17    - (roll_up roller_shutter_robot bedroom_1 rs)
+RollerShutterAgent>OnlinePlanning1#17    - (move_to_1 roller_shutter_robot bedroom_1 living_room_1)    
+RollerShutterAgent>OnlinePlanning1#17    - (move_to_1 roller_shutter_robot living_room_1 bedroom_2)    
+RollerShutterAgent>OnlinePlanning1#17    - (roll_up roller_shutter_robot bedroom_2 rs)
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Roll_Up roller_shutter_robot kitchen rs) Effect: open rs kitchen,not close rs kitchen
+RollerShutterAgent>Roll_Up#18    Intention started
+
+"Beliefs change, it has performed the action"
+
+RollerShutterAgent               Belief changed: open rs kitchen
+RollerShutterAgent               Belief changed: not close rs kitchen
+0:15:30RollerShutterAgent>Roll_Up#18     Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Move_to_1 roller_shutter_robot kitchen living_room_0) Effect: not in_room roller_shutter_robot kitchen,in_room roller_shutter_robot living_room_0
+RollerShutterAgent>Move_to_1#19  Intention started
+roller_shutter   moved from kitchen to living_room_0
+
+"Beliefs change, it has moved in a different room"
+
+RollerShutterAgent               Belief changed: in_room roller_shutter_robot living_room_0
+RollerShutterAgent>Move_to_1#19  Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Move_to_1 roller_shutter_robot living_room_0 laundry_room) Effect: not in_room roller_shutter_robot living_room_0,in_room roller_shutter_robot laundry_room
+RollerShutterAgent>Move_to_1#20  Intention started
+roller_shutter   moved from living_room_0 to laundry_room
+
+"Beliefs change, it has moved in a different room"
+
+RollerShutterAgent               Belief changed: in_room roller_shutter_robot laundry_room
+RollerShutterAgent               Belief changed: not in_room roller_shutter_robot living_room_0
+0:15:45
+
+RollerShutterAgent>Move_to_1#20   Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Roll_Up roller_shutter_robot laundry_room rs) Effect: open rs laundry_room,not close rs laundry_room
+RollerShutterAgent>Roll_Up#21    Intention started
+
+"Beliefs change, it has performed the action"
+
+RollerShutterAgent               Belief changed: open rs laundry_room
+RollerShutterAgent               Belief changed: not close rs laundry_room
+RollerShutterAgent>Roll_Up#21    Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Move_to_1 roller_shutter_robot laundry_room living_room_0) Effect: not in_room roller_shutter_robot laundry_room,in_room roller_shutter_robot living_room_0
+RollerShutterAgent>Move_to_1#22  Intention started
+roller_shutter   moved from laundry_room to living_room_0
+
+"Beliefs change, it has moved in a different room"
+
+RollerShutterAgent               Belief changed: in_room roller_shutter_robot living_room_0
+0:16:00
+
+
+RollerShutterAgent>Move_to_1#22  Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Move_to_1 roller_shutter_robot living_room_0 living_room_1) Effect: not in_room roller_shutter_robot living_room_0,in_room roller_shutter_robot living_room_1
+RollerShutterAgent>Move_to_1#23  Intention started
+roller_shutter   moved from living_room_0 to living_room_1
+
+"Beliefs change, it has moved in a different room"
+
+RollerShutterAgent               Belief changed: in_room roller_shutter_robot living_room_1
+RollerShutterAgent               Belief changed: not in_room roller_shutter_robot living_room_0
+RollerShutterAgent>Move_to_1#23  Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Move_to_1 roller_shutter_robot living_room_1 bedroom_1) Effect: not in_room roller_shutter_robot living_room_1,in_room roller_shutter_robot bedroom_1
+RollerShutterAgent>Move_to_1#24  Intention started
+roller_shutter   moved from living_room_1 to bedroom_1
+
+"Beliefs change, it has moved in a different room"
+
+RollerShutterAgent               Belief changed: in_room roller_shutter_robot bedroom_1
+0:16:15
+
+RollerShutterAgent>Move_to_1#24   Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Roll_Up roller_shutter_robot bedroom_1 rs) Effect: open rs bedroom_1,not close rs bedroom_1
+RollerShutterAgent>Roll_Up#25    Intention started
+
+"Beliefs change, it has performed the action"
+
+RollerShutterAgent               Belief changed: open rs bedroom_1
+RollerShutterAgent               Belief changed: not close rs bedroom_1
+RollerShutterAgent>Roll_Up#25    Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Move_to_1 roller_shutter_robot bedroom_1 living_room_1) Effect: not in_room roller_shutter_robot bedroom_1,in_room roller_shutter_robot living_room_1
+RollerShutterAgent>Move_to_1#26  Intention started
+roller_shutter   moved from bedroom_1 to living_room_1
+0:16:30RollerShutterAgent>Move_to_1#26   Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Move_to_1 roller_shutter_robot living_room_1 bedroom_2) Effect: not in_room roller_shutter_robot living_room_1,in_room roller_shutter_robot bedroom_2
+RollerShutterAgent>Move_to_1#27  Intention started
+roller_shutter   moved from living_room_1 to bedroom_2
+
+"Beliefs change, it has moved in a different room"
+
+RollerShutterAgent               Belief changed: in_room roller_shutter_robot bedroom_2
+0:16:45RollerShutterAgent>Move_to_1#27   Intention success
+RollerShutterAgent>OnlinePlanning1#17    Starting sequential step (Roll_Up roller_shutter_robot bedroom_2 rs) Effect: open rs bedroom_2,not close rs bedroom_2
+RollerShutterAgent>Roll_Up#28    Intention started
+
+"Beliefs change, it has performed the action"
+
+RollerShutterAgent               Belief changed: open rs bedroom_2
+RollerShutterAgent               Belief changed: not close rs bedroom_2
+RollerShutterAgent>Roll_Up#28    Intention success
+0:17:00
+RollerShutterAgent>OnlinePlanning1#17    Intention success
+RollerShutterAgent
+Succesfully used intention OnlinePlanning1 to achieve goal PddlGoal#16[object Object]
+RollerShutterAgent>RetryFourTimesIntentionCleaner1#16    Intention success
+RollerShutterAgent
+Succesfully used intention RetryFourTimesIntentionCleaner1 to achieve goal RetryGoalCleaner1#17[object Object]
+0:18:00
+0:19:00
+0:20:00
+0:20:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+0:21:00
+
+ Elisabetta  moved from living_room_1 to bedroom_1
+
+0:21:45RollerShutterAgent
+Trying to use intention RetryFourTimesIntentionCleaner1 to achieve goal RetryGoalCleaner1#30[object Object]
+RollerShutterAgent>RetryFourTimesIntentionCleaner1#29    Intention started
+RollerShutterAgent
+Trying to use intention OnlinePlanning1 to achieve goal PddlGoal#29[object Object]
+RollerShutterAgent>OnlinePlanning1#30    Intention started
+0:22:00
+0:23:00
+1:00:00
+1:01:00
+
+"Now the roller shutter robots rolls down the shutters of the upper floor (where residents sleep)"
+
+RollerShutterAgent>OnlinePlanning1#30    Plan found:
+RollerShutterAgent>OnlinePlanning1#30    - (roll_down roller_shutter_robot bedroom_2 rs)
+RollerShutterAgent>OnlinePlanning1#30    - (roll_down roller_shutter_robot bedroom_1 rs)
+RollerShutterAgent>OnlinePlanning1#30    Starting sequential step (Roll_Down roller_shutter_robot bedroom_2 rs) Effect: close rs bedroom_2,not open rs bedroom_2
+RollerShutterAgent>Roll_Down#31  Intention started
+RollerShutterAgent               Belief changed: not open rs bedroom_2
+RollerShutterAgent               Belief changed: close rs bedroom_2
+1:01:15
+
+RollerShutterAgent>Roll_Down#31   Intention success
+RollerShutterAgent>OnlinePlanning1#30    Starting sequential step (Roll_Down roller_shutter_robot bedroom_1 rs) Effect: close rs bedroom_1,not open rs bedroom_1
+RollerShutterAgent>Roll_Down#32  Intention started
+RollerShutterAgent>Roll_Down#32  Intention success
+1:01:30
+
+RollerShutterAgent>OnlinePlanning1#30     Intention success
+RollerShutterAgent
+Succesfully used intention OnlinePlanning1 to achieve goal PddlGoal#29[object Object]
+RollerShutterAgent>RetryFourTimesIntentionCleaner1#29    Intention success
+RollerShutterAgent
+Succesfully used intention RetryFourTimesIntentionCleaner1 to achieve goal RetryGoalCleaner1#30[object Object]
+1:02:00
+1:03:00
+1:04:00
+1:05:00
+1:06:00
+
+ Elisabetta  moved from bedroom_1 to living_room_1
+
+1:06:15
+ Elisabetta  moved from living_room_1 to living_room_0
+
+1:06:30
+ Elisabetta  moved from living_room_0 to laundry_room
+
+1:07:00
+
+WashingMachineAgent
+Trying to use intention RetryFourTimesIntentionCleaner2 to achieve goal RetryGoalCleaner2#34[object Object]
+WashingMachineAgent>RetryFourTimesIntentionCleaner2#33   Intention started
+WashingMachineAgent
+Trying to use intention OnlinePlanning2 to achieve goal PddlGoal#33[object Object]
+WashingMachineAgent>OnlinePlanning2#34   Intention started
+
+1:08:00
+1:08:30
+ Elisabetta  moved from laundry_room to living_room_0
+
+1:09:00
+
+//"Second simulation of the vacuum cleaner"
+
+1:10:15
+
+VacuumCleanerAgent_0>OnlinePlanning#64    Plan found:
+VacuumCleanerAgent_0>OnlinePlanning#64   - (clean_0 vacuum_robot living_room_1)
+VacuumCleanerAgent_0>OnlinePlanning#64   - (clean_0 vacuum_robot living_room_0)
+VacuumCleanerAgent_0>OnlinePlanning#64   - (clean_0 vacuum_robot battery_room)
+VacuumCleanerAgent_0>OnlinePlanning#64   - (clean_0 vacuum_robot bedroom_2)
+VacuumCleanerAgent_0>OnlinePlanning#64   - (clean_0 vacuum_robot bedroom_1)
+VacuumCleanerAgent_0>OnlinePlanning#64   - (clean_0 vacuum_robot bath_room)
+VacuumCleanerAgent_0>OnlinePlanning#64   - (clean_0 vacuum_robot laundry_room)
+VacuumCleanerAgent_0>OnlinePlanning#64   - (clean_0 vacuum_robot kitchen)
+VacuumCleanerAgent_0>OnlinePlanning#66   Intention success
+VacuumCleanerAgent_0
+Succesfully used intention OnlinePlanning to achieve goal PddlGoal#65[object Object]
+VacuumCleanerAgent_0>OnlinePlanning#64   Starting sequential step (Clean_0 vacuum_robot living_room_1) Effect: clean living_room_1,not dirty living_room_1
+VacuumCleanerAgent_0>Clean_0#67  Intention started
+VacuumCleanerAgent_0>RetryFourTimesIntentionCleaner#65   Intention success
+VacuumCleanerAgent_0
+Succesfully used intention RetryFourTimesIntentionCleaner to achieve goal RetryGoalCleaner#66[object Object]
+VacuumCleanerAgent_0>Clean_0#67  Intention success
+VacuumCleanerAgent_0>OnlinePlanning#64   Starting sequential step (Clean_0 vacuum_robot living_room_0) Effect: clean living_room_0,not dirty living_room_0
+VacuumCleanerAgent_0>Clean_0#68  Intention started
+
+1:10:30
+
+VacuumCleanerAgent_0>Clean_0#68   Intention success
+VacuumCleanerAgent_0>OnlinePlanning#64   Starting sequential step (Clean_0 vacuum_robot battery_room) Effect: clean battery_room,not dirty battery_room
+VacuumCleanerAgent_0>Clean_0#69  Intention started
+VacuumCleanerAgent_0>Clean_0#69  Intention success
+
+1:10:45
+
+VacuumCleanerAgent_0>OnlinePlanning#64    Starting sequential step (Clean_0 vacuum_robot bedroom_2) Effect: clean bedroom_2,not dirty bedroom_2
+VacuumCleanerAgent_0>Clean_0#70  Intention started
+VacuumCleanerAgent_0>Clean_0#70  Intention success
+VacuumCleanerAgent_0>OnlinePlanning#64   Starting sequential step (Clean_0 vacuum_robot bedroom_1) Effect: clean bedroom_1,not dirty bedroom_1
+VacuumCleanerAgent_0>Clean_0#71  Intention started
+
+1:11:00
+
+VacuumCleanerAgent_0>Clean_0#71  Intention success
+VacuumCleanerAgent_0>OnlinePlanning#64   Starting sequential step (Clean_0 vacuum_robot bath_room) Effect: clean bath_room,not dirty bath_room
+VacuumCleanerAgent_0>Clean_0#72  Intention started
+VacuumCleanerAgent_0>Clean_0#72  Intention success
+
+1:11:15
+
+VacuumCleanerAgent_0>OnlinePlanning#64    Starting sequential step (Clean_0 vacuum_robot laundry_room) Effect: clean laundry_room,not dirty laundry_room
+VacuumCleanerAgent_0>Clean_0#73  Intention started
+VacuumCleanerAgent_0>Clean_0#73  Intention success
+VacuumCleanerAgent_0>OnlinePlanning#64   Starting sequential step (Clean_0 vacuum_robot kitchen) Effect: clean kitchen,not dirty kitchen
+VacuumCleanerAgent_0>Clean_0#74  Intention started
+VacuumCleanerAgent_0>Clean_0#74  Intention success
+VacuumCleanerAgent_0>OnlinePlanning#64   Intention success
+VacuumCleanerAgent_0
+Succesfully used intention OnlinePlanning to achieve goal PddlGoal#63[object Object]
+VacuumCleanerAgent_0>RetryFourTimesIntentionCleaner#63   Intention success
+VacuumCleanerAgent_0
+Succesfully used intention RetryFourTimesIntentionCleaner to achieve goal RetryGoalCleaner#64[object Object]
+
+1:12:00
+
+
+RollerShutterAgent
+Trying to use intention RetryFourTimesIntentionCleaner1 to achieve goal RetryGoalCleaner1#76[object Object]
+RollerShutterAgent>RetryFourTimesIntentionCleaner1#75    Intention started
+RollerShutterAgent
+Trying to use intention OnlinePlanning1 to achieve goal PddlGoal#75[object Object]
+RollerShutterAgent>OnlinePlanning1#76    Intention started
+
+1:13:00
+
+
+1:13:15
+
+//"Second simulation for Roller Shutter"
+
+RollerShutterAgent>OnlinePlanning1#76     Plan found:
+RollerShutterAgent>OnlinePlanning1#76    - (roll_up roller_shutter_robot bedroom_2 rs)
+RollerShutterAgent>OnlinePlanning1#76    Starting sequential step (Roll_Up roller_shutter_robot bedroom_2 rs) Effect: open rs bedroom_2,not close rs bedroom_2
+RollerShutterAgent>Roll_Up#77    Intention started
+RollerShutterAgent               Belief changed: open rs bedroom_2
+RollerShutterAgent               Belief changed: not close rs bedroom_2
+RollerShutterAgent>Roll_Up#77    Intention success
+
+1:13:30
+
+RollerShutterAgent>OnlinePlanning1#76     Intention success
+RollerShutterAgent
+Succesfully used intention OnlinePlanning1 to achieve goal PddlGoal#75[object Object]
+RollerShutterAgent>RetryFourTimesIntentionCleaner1#75    Intention success
+RollerShutterAgent
+Succesfully used intention RetryFourTimesIntentionCleaner1 to achieve goal RetryGoalCleaner1#76[object Object]

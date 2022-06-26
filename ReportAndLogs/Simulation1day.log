@@ -1,0 +1,546 @@
+/----------INITIAL BELIEFS OF THE AGENTS----------/
+
+houseAgent               Belief changed: intensity false                            -> beliefs of the DC mode of the car
+houseAgent               Belief changed: capacity 0                                 -> beliefs of the capacity of the panels
+lightAgent               Belief changed: pers_in_room bedroom_1                     -> beliefs of the presence of people in the room
+lightAgent               Belief changed: light_on bedroom_1_light                   -> beliefs of the status of the light
+lightAgent               Belief changed: light_off living_room_1_light              -> beliefs of the status of the light in the previous room
+carAgent                 Belief changed: not in_charge car                          -> beliefs of the car, if it is in charge or not
+0:01:00
+
+/----------REPORT OF THE PRODUCTION, CONSUME AND ENERGY STORED/REQUIRED----------/
+
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+
+/----------REPORT OF THE CAPACITY OF THE BATTERIES AND THE PRICE OF THE CURRENT----------/
+/// "At the begininning of the simulation the batteries are empty, that is why the message"
+/// 'Batteries are not charged enough to supply the house'
+
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+0:02:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+0:03:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+0:04:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+
+0:05:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+
+0:06:00
+
+/// "Residents start moving around the house and panels start producing electricity"
+/// "As we can see the consumption of the house is 0, while the prodution of the panels is 3, batteries start charging"
+
+
+Elisabetta  moved from bedroom_1 to living_room_1
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 0   /// "Capacity is 0, it will be updated in the next hour"
+
+/// "lightAgent switches on the light of the room a resident entered and turns off the light of the previous room"
+
+living_room_1 light turned on
+
+
+bedroom_1 light turned off
+
+lightAgent               Belief changed: pers_in_room living_room_1
+lightAgent               Belief changed: light_on living_room_1_light
+lightAgent               Belief changed: light_off bedroom_1_light
+houseAgent               Belief changed: capacity 3
+houseAgent>AlarmIntention#0      ALARM, it's 6am!
+houseAgent>AlarmIntention#0      Intention success
+houseAgent
+Succesfully used intention AlarmIntention to achieve goal AlarmGoal#0[object Object]
+
+0:06:15
+
+Stefano  moved from bedroom_1 to living_room_1
+
+
+Elisabetta  moved from living_room_1 to living_room_0
+
+/// "Car is plugged in, the agent detects its battery is low, set DC mode to true"
+/// "Meanwhile Elisabetta has moved into the living room 0, the device tv-screen is switched on"
+
+Level battery low, DC mode on
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ living_room_1 light turned off
+
+lightAgent               Belief changed: pers_in_room living_room_0
+lightAgent               Belief changed: light_on living_room_0_light
+carAgent                 Belief changed: in_charge car
+
+0:06:30
+Stefano  moved from living_room_1 to living_room_0
+
+
+Elisabetta  moved from living_room_0 to laundry_room
+
+Device heat_pump switched on
+
+
+laundry_room light turned on
+
+
+living_room_0 light turned off
+
+lightAgent               Belief changed: pers_in_room laundry_room
+lightAgent               Belief changed: light_on laundry_room_light
+lightAgent               Belief changed: light_off living_room_0_light
+0:07:00
+Capacity of panels  3
+Consume of the house  7   //"Car DC mode (5 kWs) + tv-screen (1 kW) + heat pump (1 kW)" 
+Energy stored(+)/required(-)  -4
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  -4  total price:  0.40
+
+Level battery low, DC mode on
+
+/// "The car is charged in DC mode, the devices in the house on has to be turned off" ///
+
+Device tv_screen switched off
+
+Device heat_pump switched off
+
+houseAgent               Belief changed: intensity true
+
+0:07:30
+Elisabetta  moved from laundry_room to living_room_0
+
+Device tv_screen switched on
+
+
+living_room_0 light turned on
+
+
+laundry_room light turned off
+
+lightAgent               Belief changed: light_off laundry_room_light
+
+0:08:00
+
+Stefano  moved from living_room_0 to garage
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 3
+
+
+garage light turned on
+
+
+living_room_0 light turned off
+
+lightAgent               Belief changed: pers_in_room garage
+lightAgent               Belief changed: light_on garage_light
+carAgent                 Belief changed: not in_charge car
+
+/// "Car has disconnected, the heat pump, prevoiusly on is turned on again" ///
+
+Device heat_pump switched on
+
+0:09:00
+
+Elisabetta  moved from living_room_0 to laundry_room
+
+Capacity of panels  3
+Consume of the house  1
+Energy stored(+)/required(-)  2
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 6
+
+Device heat_pump switched on
+
+
+laundry_room light turned on
+
+
+living_room_0 light turned off
+
+0:10:00
+
+Elisabetta  moved from laundry_room to living_room_0
+
+Capacity of panels  3
+Consume of the house  2
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 8
+
+// "Elisabetta has moved to living room 0, tv-screen is turned on"
+
+Device tv_screen switched on
+
+
+living_room_0 light turned on
+
+
+laundry_room light turned off
+
+0:11:00
+
+Capacity of panels  3
+Consume of the house  3
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  9
+0:12:00
+
+Elisabetta  moved from living_room_0 to kitchen
+
+Capacity of panels  3
+Consume of the house  3
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  9
+Device oven switched on
+
+
+kitchen light turned on
+
+
+living_room_0 light turned off
+
+lightAgent               Belief changed: pers_in_room kitchen
+lightAgent               Belief changed: light_on kitchen_light
+
+0:13:00
+
+Capacity of panels  6
+Consume of the house  5
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 9
+
+houseAgent               Belief changed: capacity 6
+
+0:14:00
+
+Capacity of panels  6
+Consume of the house  5
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 10
+
+0:14:30
+
+Elisabetta  moved from kitchen to living_room_0
+
+Device tv_screen switched on
+
+
+living_room_0 light turned on
+
+
+kitchen light turned off
+
+lightAgent               Belief changed: light_off kitchen_light
+
+0:14:45
+
+Elisabetta  moved from living_room_0 to living_room_1
+
+
+living_room_1 light turned on
+
+
+living_room_0 light turned off
+
+0:15:00
+
+Elisabetta  moved from living_room_1 to bedroom_2
+
+
+bedroom_2 light turned off
+
+Capacity of panels  6
+Consume of the house  6
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  11
+
+ bedroom_2 light turned on
+
+
+ living_room_1 light turned off
+
+lightAgent               Belief changed: pers_in_room bedroom_2
+lightAgent               Belief changed: light_on bedroom_2_light
+0:15:30
+ Elisabetta  moved from bedroom_2 to living_room_1
+
+
+ living_room_1 light turned on
+
+
+ bedroom_2 light turned off
+
+lightAgent               Belief changed: light_off bedroom_2_light
+0:16:00
+
+ Elisabetta  moved from living_room_1 to living_room_0
+
+Capacity of panels  6
+Consume of the house  6
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  11
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ living_room_1 light turned off
+
+0:17:00
+
+// "House consumption has overtaken the capacity of the panels, batteries starts supplying"
+// "the difference and their capacity decreases from 11 to 10"
+
+
+Capacity of panels  6
+Consume of the house  7
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  10
+0:17:15
+ Elisabetta  moved from living_room_0 to bath_room
+
+
+ bath_room light turned on
+
+
+ living_room_0 light turned off
+
+lightAgent               Belief changed: pers_in_room bath_room
+lightAgent               Belief changed: light_on bath_room_light
+0:17:45
+ Elisabetta  moved from bath_room to living_room_0
+
+Device tv_screen switched on
+
+
+living_room_0 light turned on
+
+
+bath_room light turned off
+
+lightAgent               Belief changed: light_off bath_room_light
+0:18:00
+Capacity of panels  6
+Consume of the house  8
+Energy stored(+)/required(-)  -2
+Batteries are supplying the house
+
+Capacity of the batteries is:  8
+0:18:30
+ Elisabetta  moved from living_room_0 to kitchen
+
+
+ kitchen light turned on
+
+
+ living_room_0 light turned off
+
+0:19:00
+Capacity of panels  0
+Consume of the house  8
+Energy stored(+)/required(-)  -8
+
+// "This is the moment when the batteries don't have enough energy to supply the house"
+// "The house agent buys current from the public line"
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  -8  total price:  1.20
+0:19:30
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+
+Stefano  moved from garage to kitchen
+
+carAgent                 Belief changed: in_charge car
+lightAgent               Belief changed: light_off garage_light
+0:19:45
+ Stefano  moved from kitchen to living_room_0
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+0:20:00
+Capacity of panels  0
+Consume of the house  3
+Energy stored(+)/required(-)  -3
+Batteries are supplying the house
+
+Capacity of the batteries is:  5
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+0:20:30
+ Stefano  moved from living_room_0 to living_room_1
+
+
+ Elisabetta  moved from kitchen to living_room_0
+
+
+ living_room_1 light turned on
+
+
+ living_room_0 light turned off
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+0:20:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+0:21:00
+
+ Stefano  moved from living_room_1 to bedroom_1
+
+
+ Elisabetta  moved from living_room_1 to bedroom_1
+
+Capacity of panels  0
+Consume of the house  4
+Energy stored(+)/required(-)  -4
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+
+bedroom_1 light turned on
+
+
+living_room_1 light turned off
+
+0:21:45
+
+bedroom_1 light turned off
+
+0:22:00
+Capacity of panels  0
+Consume of the house  3
+Energy stored(+)/required(-)  -3
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  -3  total price:  1.50
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+0:23:00
+Capacity of panels  0
+Consume of the house  3
+Energy stored(+)/required(-)  -3
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  -3  total price:  1.80
+
+//"Car agent detects the car is totally charged and disconnects it, updating its beliefs"
+
+Car totally charged
+
+carAgent                 Belief changed: not in_charge car
+
+0:23:30
+
+// "Daily report of the current"
+
+Daily report of current sold and bought:
+
+Current sold (€):  0.00
+Current bought (€):  1.80

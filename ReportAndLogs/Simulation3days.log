@@ -1,0 +1,1440 @@
+houseAgent               Belief changed: intensity false
+houseAgent               Belief changed: capacity 0
+lightAgent               Belief changed: pers_in_room bedroom_1
+lightAgent               Belief changed: light_on bedroom_1_light
+lightAgent               Belief changed: light_off living_room_1_light
+carAgent                 Belief changed: not in_charge car
+0:01:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+0:02:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+0:03:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+0:04:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+0:05:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  0  total price:  0.00
+0:06:00
+
+ Elisabetta  moved from bedroom_1 to living_room_1
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 0
+
+
+ living_room_1 light turned on
+
+
+ bedroom_1 light turned off
+
+lightAgent               Belief changed: pers_in_room living_room_1
+lightAgent               Belief changed: light_on living_room_1_light
+lightAgent               Belief changed: light_off bedroom_1_light
+houseAgent               Belief changed: capacity 3
+houseAgent>AlarmIntention#0      ALARM, it's 6am!
+houseAgent>AlarmIntention#0      Intention success
+houseAgent
+Succesfully used intention AlarmIntention to achieve goal AlarmGoal#0[object Object]
+0:06:15
+ Stefano  moved from bedroom_1 to living_room_1
+
+
+ Elisabetta  moved from living_room_1 to living_room_0
+
+
+Level battery low, DC mode on
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ living_room_1 light turned off
+
+lightAgent               Belief changed: pers_in_room living_room_0
+lightAgent               Belief changed: light_on living_room_0_light
+carAgent                 Belief changed: in_charge car
+0:06:30
+ Stefano  moved from living_room_1 to living_room_0
+
+
+ Elisabetta  moved from living_room_0 to laundry_room
+
+Device oven switched off
+
+Device heat_pump switched on
+
+
+ laundry_room light turned on
+
+
+ living_room_0 light turned off
+
+lightAgent               Belief changed: pers_in_room laundry_room
+lightAgent               Belief changed: light_on laundry_room_light
+lightAgent               Belief changed: light_off living_room_0_light
+0:07:00
+Capacity of panels  3
+Consume of the house  5
+Energy stored(+)/required(-)  -2
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+
+Level battery low, DC mode on
+
+Device tv_screen switched off
+
+Device heat_pump switched off
+
+houseAgent               Belief changed: intensity true
+0:07:30
+ Elisabetta  moved from laundry_room to living_room_0
+
+Device heat_pump switched off
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ laundry_room light turned off
+
+lightAgent               Belief changed: light_off laundry_room_light
+0:08:00
+
+ Stefano  moved from living_room_0 to garage
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 1
+
+
+ garage light turned on
+
+
+ living_room_0 light turned off
+
+lightAgent               Belief changed: pers_in_room garage
+lightAgent               Belief changed: light_on garage_light
+carAgent                 Belief changed: not in_charge car
+Device oven switched on
+
+Device heat_pump switched on
+
+0:09:00
+
+ Elisabetta  moved from living_room_0 to laundry_room
+
+Device tv_screen switched off
+
+Capacity of panels  3
+Consume of the house  2
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 4
+
+Device heat_pump switched on
+
+
+ laundry_room light turned on
+
+
+ living_room_0 light turned off
+
+Device tv_screen switched on
+
+0:10:00
+
+ Elisabetta  moved from laundry_room to living_room_0
+
+Device heat_pump switched off
+
+Capacity of panels  3
+Consume of the house  3
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  5
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ laundry_room light turned off
+
+Device heat_pump switched on
+
+0:11:00
+Capacity of panels  3
+Consume of the house  5
+Energy stored(+)/required(-)  -2
+Batteries are supplying the house
+Capacity of the batteries is:  3
+0:12:00
+
+ Elisabetta  moved from living_room_0 to kitchen 
+
+Device tv_screen switched off
+
+Capacity of panels  3
+Consume of the house  4
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  2
+
+ kitchen light turned on
+
+
+ living_room_0 light turned off
+
+lightAgent               Belief changed: pers_in_room kitchen  
+lightAgent               Belief changed: light_on kitchen_light
+Device tv_screen switched on
+
+0:13:00
+Capacity of panels  6
+Consume of the house  5
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 2 
+
+houseAgent               Belief changed: capacity 6
+0:14:00
+Capacity of panels  6
+Consume of the house  5        
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 3
+
+0:14:30
+ Elisabetta  moved from kitchen to living_room_0
+
+Device oven switched off
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+lightAgent               Belief changed: light_off kitchen_light
+0:14:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+Device tv_screen switched off
+
+
+ living_room_1 light turned on
+
+
+ living_room_0 light turned off
+
+0:15:00
+
+ Elisabetta  moved from living_room_1 to bedroom_2
+
+
+ bedroom_2 light turned off
+
+Capacity of panels  6
+Consume of the house  3
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 4
+
+
+ bedroom_2 light turned on
+
+
+ living_room_1 light turned off
+
+lightAgent               Belief changed: pers_in_room bedroom_2
+lightAgent               Belief changed: light_on bedroom_2_light
+Device oven switched on
+
+Device tv_screen switched on
+
+0:15:30
+ Elisabetta  moved from bedroom_2 to living_room_1
+
+
+ living_room_1 light turned on
+
+
+ bedroom_2 light turned off
+
+lightAgent               Belief changed: light_off bedroom_2_light
+0:16:00
+
+ Elisabetta  moved from living_room_1 to living_room_0
+
+Capacity of panels  6
+Consume of the house  6
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  7
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ living_room_1 light turned off
+
+0:17:00
+Capacity of panels  6
+Consume of the house  7
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  6
+0:17:15
+ Elisabetta  moved from living_room_0 to bath_room
+
+Device tv_screen switched off
+
+
+ bath_room light turned on
+
+
+ living_room_0 light turned off
+
+lightAgent               Belief changed: pers_in_room bath_room
+lightAgent               Belief changed: light_on bath_room_light
+0:17:45
+ Elisabetta  moved from bath_room to living_room_0
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ bath_room light turned off
+
+lightAgent               Belief changed: light_off bath_room_light
+0:18:00
+Capacity of panels  6
+Consume of the house  7
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  5
+0:18:30
+ Elisabetta  moved from living_room_0 to kitchen
+
+Device tv_screen switched off
+
+
+ kitchen light turned on
+
+
+ living_room_0 light turned off
+
+0:19:00
+Capacity of panels  0
+Consume of the house  6
+Energy stored(+)/required(-)  -6
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  -6  total price:  0.60
+Device tv_screen switched on
+
+0:19:30
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+
+ Stefano  moved from garage to kitchen
+
+carAgent                 Belief changed: in_charge car
+lightAgent               Belief changed: light_off garage_light
+0:19:45
+ Stefano  moved from kitchen to living_room_0
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+0:20:00
+Capacity of panels  0
+Consume of the house  3
+Energy stored(+)/required(-)  -3
+Batteries are supplying the house
+
+Capacity of the batteries is:  2
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+0:20:30
+ Stefano  moved from living_room_0 to living_room_1
+
+
+ Elisabetta  moved from kitchen to living_room_0
+
+Device oven switched off
+
+
+ living_room_1 light turned on
+
+
+ living_room_0 light turned off
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+0:20:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+Device tv_screen switched off
+
+0:21:00
+
+ Stefano  moved from living_room_1 to bedroom_1
+
+
+ Elisabetta  moved from living_room_1 to bedroom_1
+
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+
+ bedroom_1 light turned on
+
+
+ living_room_1 light turned off
+
+Device oven switched on
+
+Device tv_screen switched on
+
+0:21:45
+ bedroom_1 light turned off
+
+0:22:00
+Capacity of panels  0
+Consume of the house  6
+Energy stored(+)/required(-)  -6
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  -6  total price:  1.20
+
+Level battery normal, keep charging in AC mode
+
+
+Consume of the car is 3kW
+
+0:23:00
+Capacity of panels  0
+Consume of the house  3
+Energy stored(+)/required(-)  -3
+
+Batteries are not charged enough to supply the house
+
+kWs bought from the public line:  -3  total price:  1.50
+
+Car totally charged
+
+carAgent                 Belief changed: not in_charge car
+0:23:30Daily report of current sold and bought:
+
+Current sold (€):  0.00
+Current bought (€):  1.50
+1:00:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+1:01:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+1:02:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+1:03:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+1:04:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+1:05:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  1
+1:06:00
+
+ Elisabetta  moved from bedroom_1 to living_room_1
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 1
+
+
+ living_room_1 light turned on
+
+
+ bedroom_1 light turned off
+
+1:06:15
+ Stefano  moved from bedroom_1 to living_room_1
+
+
+ Elisabetta  moved from living_room_1 to living_room_0
+
+
+Car totally charged
+
+Device tv_screen switched on
+
+1:06:30
+ Stefano  moved from living_room_1 to living_room_0
+
+
+ Elisabetta  moved from living_room_0 to laundry_room
+
+Device oven switched off
+
+Device heat_pump switched on
+
+
+ laundry_room light turned on
+
+
+ living_room_0 light turned off
+
+1:07:00
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 4
+
+Device oven switched on
+
+1:07:30
+ Elisabetta  moved from laundry_room to living_room_0
+
+Device heat_pump switched off
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ laundry_room light turned off
+
+1:08:00
+
+ Stefano  moved from living_room_0 to garage
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 7
+
+Device heat_pump switched on
+
+1:09:00
+
+ Elisabetta  moved from living_room_0 to laundry_room
+
+Device tv_screen switched off
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 10
+
+Device heat_pump switched on
+
+
+ laundry_room light turned on
+
+
+ living_room_0 light turned off
+
+Device tv_screen switched on
+
+1:10:00
+
+ Elisabetta  moved from laundry_room to living_room_0
+
+Device heat_pump switched off
+
+Capacity of panels  3
+Consume of the house  1
+Energy stored(+)/required(-)  2
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 13
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ laundry_room light turned off
+
+Device heat_pump switched on
+
+1:11:00
+Capacity of panels  3
+Consume of the house  3
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  15
+1:12:00
+
+ Elisabetta  moved from living_room_0 to kitchen
+
+Device tv_screen switched off
+
+Capacity of panels  3
+Consume of the house  2
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  1.00
+
+
+ kitchen light turned on
+
+
+ living_room_0 light turned off
+
+Device tv_screen switched on
+
+1:13:00
+Capacity of panels  6
+Consume of the house  3
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  3.00
+
+1:14:00
+Capacity of panels  6
+Consume of the house  3
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  3.00
+
+1:14:30
+ Elisabetta  moved from kitchen to living_room_0
+
+Device oven switched off
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+1:14:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+Device tv_screen switched off
+
+1:15:00
+
+ Elisabetta  moved from living_room_1 to bedroom_2
+
+
+ bedroom_2 light turned off
+
+Capacity of panels  6
+Consume of the house  1
+Energy stored(+)/required(-)  5
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  5.00
+
+
+ bedroom_2 light turned on
+
+
+ living_room_1 light turned off
+
+Device oven switched on
+
+Device tv_screen switched on
+
+1:15:30
+ Elisabetta  moved from bedroom_2 to living_room_1
+
+
+ living_room_1 light turned on
+
+
+ bedroom_2 light turned off
+
+1:16:00
+
+ Elisabetta  moved from living_room_1 to living_room_0
+
+Capacity of panels  6
+Consume of the house  4
+Energy stored(+)/required(-)  2
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  2.00
+
+Device tv_screen switched on
+
+1:17:00
+Capacity of panels  6
+Consume of the house  5
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  1.00
+
+1:17:15
+ Elisabetta  moved from living_room_0 to bath_room
+
+Device tv_screen switched off
+
+
+ bath_room light turned on
+
+
+ living_room_0 light turned off
+
+1:17:45
+ Elisabetta  moved from bath_room to living_room_0
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ bath_room light turned off
+
+1:18:00
+Capacity of panels  6
+Consume of the house  5
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  1.00
+
+1:18:30
+ Elisabetta  moved from living_room_0 to kitchen
+
+Device tv_screen switched off
+
+
+ kitchen light turned on
+
+
+ living_room_0 light turned off
+
+1:19:00
+Capacity of panels  0
+Consume of the house  4
+Energy stored(+)/required(-)  -4
+Batteries are supplying the house
+
+Capacity of the batteries is:  11
+Device tv_screen switched on
+
+1:19:30
+Car totally charged
+
+
+ Stefano  moved from garage to kitchen
+
+1:19:45
+ Stefano  moved from kitchen to living_room_0
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+1:20:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  11
+1:20:30
+ Stefano  moved from living_room_0 to living_room_1
+
+
+ Elisabetta  moved from kitchen to living_room_0
+
+Device oven switched off
+
+Device tv_screen switched on
+
+1:20:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+Device tv_screen switched off
+
+1:21:00
+
+ Stefano  moved from living_room_1 to bedroom_1
+
+
+ Elisabetta  moved from living_room_1 to bedroom_1
+
+Capacity of panels  0
+Consume of the house  -2
+Energy stored(+)/required(-)  2
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 11
+
+
+ bedroom_1 light turned on
+
+
+ living_room_1 light turned off
+
+Device oven switched on
+
+Device tv_screen switched on
+
+1:21:45
+ bedroom_1 light turned off
+
+1:22:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  12
+1:23:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  11
+1:23:30Daily report of current sold and bought:
+
+Current sold (€):  3.20
+Current bought (€):  1.50
+2:00:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  10
+2:01:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  9
+2:02:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  8
+2:03:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  7
+2:04:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  6
+2:05:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  5
+2:06:00
+
+ Elisabetta  moved from bedroom_1 to living_room_1
+
+Capacity of panels  3
+Consume of the house  1
+Energy stored(+)/required(-)  2
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 5
+
+
+ living_room_1 light turned on
+
+
+ bedroom_1 light turned off
+
+2:06:15
+ Stefano  moved from bedroom_1 to living_room_1
+
+
+ Elisabetta  moved from living_room_1 to living_room_0
+
+
+Car totally charged
+
+Device tv_screen switched on
+
+2:06:30
+ Stefano  moved from living_room_1 to living_room_0
+
+
+ Elisabetta  moved from living_room_0 to laundry_room
+
+Device oven switched off
+
+Device heat_pump switched on
+
+
+ laundry_room light turned on
+
+
+ living_room_0 light turned off
+
+2:07:00
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 7
+
+Device oven switched on
+
+2:07:30
+ Elisabetta  moved from laundry_room to living_room_0
+
+Device heat_pump switched off
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ laundry_room light turned off
+
+2:08:00
+
+ Stefano  moved from living_room_0 to garage
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 10
+
+Device heat_pump switched on
+
+2:09:00
+
+ Elisabetta  moved from living_room_0 to laundry_room
+
+Device tv_screen switched off
+
+Capacity of panels  3
+Consume of the house  0
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 13
+
+Device heat_pump switched on
+
+
+ laundry_room light turned on
+
+
+ living_room_0 light turned off
+
+Device tv_screen switched on
+
+2:10:00
+
+ Elisabetta  moved from laundry_room to living_room_0
+
+Device heat_pump switched off
+
+Capacity of panels  3
+Consume of the house  1
+Energy stored(+)/required(-)  2
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  2.00
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ laundry_room light turned off
+
+Device heat_pump switched on
+
+2:11:00
+Capacity of panels  3
+Consume of the house  3
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  15
+2:12:00
+
+ Elisabetta  moved from living_room_0 to kitchen
+
+Device tv_screen switched off
+
+Capacity of panels  3
+Consume of the house  2
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  1.00
+
+
+ kitchen light turned on
+
+
+ living_room_0 light turned off
+
+Device tv_screen switched on
+
+2:13:00
+Capacity of panels  6
+Consume of the house  3
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  3.00
+
+2:14:00
+Capacity of panels  6
+Consume of the house  3
+Energy stored(+)/required(-)  3
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  3.00
+
+2:14:30
+ Elisabetta  moved from kitchen to living_room_0
+
+Device oven switched off
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+2:14:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+Device tv_screen switched off
+
+2:15:00
+
+ Elisabetta  moved from living_room_1 to bedroom_2
+
+
+ bedroom_2 light turned off
+
+Capacity of panels  6
+Consume of the house  1
+Energy stored(+)/required(-)  5
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  5.00
+
+
+ bedroom_2 light turned on
+
+
+ living_room_1 light turned off
+
+Device oven switched on
+
+Device tv_screen switched on
+
+2:15:30
+ Elisabetta  moved from bedroom_2 to living_room_1
+
+
+ living_room_1 light turned on
+
+
+ bedroom_2 light turned off
+
+2:16:00
+
+ Elisabetta  moved from living_room_1 to living_room_0
+
+Capacity of panels  6
+Consume of the house  4
+Energy stored(+)/required(-)  2
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  2.00
+
+Device tv_screen switched on
+
+2:17:00
+Capacity of panels  6
+Consume of the house  5
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  1.00
+
+2:17:15
+ Elisabetta  moved from living_room_0 to bath_room
+
+Device tv_screen switched off
+
+
+ bath_room light turned on
+
+
+ living_room_0 light turned off
+
+2:17:45
+ Elisabetta  moved from bath_room to living_room_0
+
+Device tv_screen switched on
+
+
+ living_room_0 light turned on
+
+
+ bath_room light turned off
+
+2:18:00
+Capacity of panels  6
+Consume of the house  5
+Energy stored(+)/required(-)  1
+
+Storing energy in the batteries
+
+
+Batteries are full, capacity  15
+
+Surplus of energy sold to public authority:  1.00
+
+2:18:30
+ Elisabetta  moved from living_room_0 to kitchen
+
+Device tv_screen switched off
+
+
+ kitchen light turned on
+
+
+ living_room_0 light turned off
+
+2:19:00
+Capacity of panels  0
+Consume of the house  4
+Energy stored(+)/required(-)  -4
+Batteries are supplying the house
+
+Capacity of the batteries is:  11
+Device tv_screen switched on
+
+2:19:30
+Car totally charged
+
+
+ Stefano  moved from garage to kitchen
+
+2:19:45
+ Stefano  moved from kitchen to living_room_0
+
+
+ living_room_0 light turned on
+
+
+ kitchen light turned off
+
+2:20:00
+Capacity of panels  0
+Consume of the house  0
+Energy stored(+)/required(-)  0
+Batteries are supplying the house
+
+Capacity of the batteries is:  11
+2:20:30
+ Stefano  moved from living_room_0 to living_room_1
+
+
+ Elisabetta  moved from kitchen to living_room_0
+
+Device oven switched off
+
+Device tv_screen switched on
+
+2:20:45
+ Elisabetta  moved from living_room_0 to living_room_1
+
+Device tv_screen switched off
+
+2:21:00
+
+ Stefano  moved from living_room_1 to bedroom_1
+
+
+ Elisabetta  moved from living_room_1 to bedroom_1
+
+Capacity of panels  0
+Consume of the house  -2
+Energy stored(+)/required(-)  2
+
+Storing energy in the batteries
+
+
+Charging batteries, capacity 11
+
+
+ bedroom_1 light turned on
+
+
+ living_room_1 light turned off
+
+Device oven switched on
+
+Device tv_screen switched on
+
+2:21:45
+ bedroom_1 light turned off
+
+2:22:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  12
+2:23:00
+Capacity of panels  0
+Consume of the house  1
+Energy stored(+)/required(-)  -1
+Batteries are supplying the house
+
+Capacity of the batteries is:  11
+2:23:30Daily report of current sold and bought:
+
+Current sold (€):  6.80
+Current bought (€):  1.50
