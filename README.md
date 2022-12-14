@@ -1,4 +1,4 @@
-Final project for **Autonomous Software Agents 2021 course** of Artificial Intelligence Systems master degree. 
+Final project for **Autonomous Software Agents 2022 course** of Artificial Intelligence Systems master degree. 
 
 # Autonode.js
 
