@@ -1,3 +1,5 @@
+Final project for Autonomous Software Agents 2021 course of Artificial Intelligence Systems master degree. 
+
 # Autonode.js
 
 ### Autonomous Software Agents - Lab
